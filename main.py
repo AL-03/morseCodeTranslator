@@ -9,7 +9,6 @@ def decode_morse_code(message):
     if message == " ":
         print(" ")
     else:
-        message = message.strip()
         decoded = message.replace(" .-/", "A").replace(" -.../", "B").replace(" -.-./", "C").replace(" -../", "D").replace(" ./", "E")\
             .replace(" ..-./", "F").replace(" --./", "G").replace(" ..../", "H").replace(" ../", "I").replace(" .---/", "J")\
             .replace(" -.-/", "K").replace(" .-../", "L").replace(" --/", "M").replace(" -./", "N").replace(" ---/", "O").replace(" .--./", "P")\
